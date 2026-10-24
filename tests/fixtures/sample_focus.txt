@@ -1,0 +1,47 @@
+@days = 5
+
+shared_focus = {
+	id = SHARED_root
+	available = {
+		threat > 0.5
+	}
+}
+
+focus_tree = {
+	id = sample_tree
+	shared_focus = SHARED_root
+
+	focus = {
+		id = SAMPLE_a
+		mutually_exclusive = { focus = SAMPLE_b }
+		available_if_capitulated = yes
+		available = {
+			has_war = yes
+		}
+	}
+
+	focus = {
+		id = SAMPLE_b
+		prerequisite = { focus = SAMPLE_a focus = SHARED_root }
+		prerequisite = { focus = SAMPLE_c }
+		bypass = {
+			always = no
+		}
+		allow_branch = {
+			has_dlc = "Test"
+		}
+		available = {
+			date > @days
+		}
+	}
+
+	focus = {
+		id = SAMPLE_hidden
+		allow_branch = { always = no }
+	}
+
+	focus = {
+		id = SAMPLE_locked
+		available = { always = no }
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "vanilla": {
+    "slug": "focus_available_notifications",
+    "name": "Focus Available Notifications",
+    "dependencies": [],
+    "id_prefix": "fanv",
+    "layers": [
+      { "kind": "install" }
+    ]
+  },
+  "owb": {
+    "slug": "focus_available_notifications_owb",
+    "name": "Focus Available Notifications - Old World Blues",
+    "dependencies": ["Old World Blues"],
+    "id_prefix": "fano",
+    "layers": [
+      { "kind": "workshop", "id": "2265420196" }
+    ]
+  }
+}

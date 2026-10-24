@@ -1,0 +1,87 @@
+Copy one block into the Steam Workshop description. Upload the matching mod only.
+Thumbnail: assets/<keyword>/thumbnail.png after resize (512x512 PNG, under 1 MB).
+Gallery: screenshots/<keyword>/ (1920x1080, under 1 MB each). Those images are not part of the mod files.
+
+================================================================================
+VANILLA
+Mod folder: mods/vanilla
+Title: Focus Available Notifications
+Tags: Gameplay, Utilities
+================================================================================
+
+[h1]AI usage warning[/h1]
+[b]This mod was built with AI assistance.[/b] If you do not want AI-authored mods, or you do not want to maintain submods against an AI-assisted codebase, this is not the mod for you. Unsubscribe and use something else.
+
+[h1]What this is[/h1]
+Hearts of Iron IV never tells you when a national focus becomes available. World tension, another country going to war, or another country finishing a focus can unlock something, and the tree stays quiet.
+
+This adds one decision section, [b]Focus Notifications[/b], with two decisions:
+
+[list]
+[*] [b]Enable Focus Available Notifications[/b]
+[*] [b]Disable Focus Available Notifications[/b]
+[/list]
+
+Notifications are off in a new game. Turning them on opens an event for every focus you can already take, and another event each time a further focus becomes available. The event title is [b]New Focus Available[/b]. The text is [b]The focus X is now available[/b], using the focus name from the game.
+
+Each focus is remembered. Disabling and enabling again does not repeat an event you already got. A focus that unlocked while notifications were off is still reported, if you were never shown it.
+
+The check runs when you click enable, then once a day after that. It only runs for the country you are playing.
+
+[h1]Load order[/h1]
+Load this with the base game. It adds a decision, events, and checks, and leaves focus trees, costs, and rewards as they are.
+
+[h1]Compatibility[/h1]
+Events are built from the base game's national focuses, assuming no submod changes the focus tree. A mod that adds or edits focuses is outside this version.
+
+The code for adding another parent mod is on GitHub. This repository holds a separate notification mod for each parent. Open a pull request to add one.
+
+[h1]Source[/h1]
+[url=https://github.com/thethomaseffect/hoi4-focus-available-notifications]GitHub: Focus Available Notifications[/url]
+
+Bug reports belong on GitHub issues, not in the Workshop comments.
+
+================================================================================
+OLD WORLD BLUES
+Mod folder: mods/owb
+Title: Focus Available Notifications - Old World Blues
+Tags: Gameplay, Utilities
+Required item: Old World Blues
+================================================================================
+
+[h1]AI usage warning[/h1]
+[b]This mod was built with AI assistance.[/b] If you do not want AI-authored mods, or you do not want to maintain submods against an AI-assisted codebase, this is not the mod for you. Unsubscribe and use something else.
+
+[h1]What this is[/h1]
+Notifications for Old World Blues national focuses. The events are built from that mod's focus trees.
+
+Hearts of Iron IV never tells you when a national focus becomes available. This adds one decision section, [b]Focus Notifications[/b], with two decisions:
+
+[list]
+[*] [b]Enable Focus Available Notifications[/b]
+[*] [b]Disable Focus Available Notifications[/b]
+[/list]
+
+Notifications are off in a new game. Turning them on opens an event for every focus you can already take, and another event each time a further focus becomes available. The event title is [b]New Focus Available[/b]. The text is [b]The focus X is now available[/b], using the focus name from the game.
+
+Each focus is remembered. Disabling and enabling again does not repeat an event you already got. A focus that unlocked while notifications were off is still reported, if you were never shown it.
+
+The check runs when you click enable, then once a day after that. It only runs for the country you are playing.
+
+[h1]Load order[/h1]
+[list]
+[*] Old World Blues
+[*] Other Old World Blues submods
+[*] [b]Focus Available Notifications - Old World Blues[/b] after Old World Blues
+[/list]
+It adds a decision, events, and checks on top of Old World Blues.
+
+[h1]Compatibility[/h1]
+Events are built from the Old World Blues national focuses, assuming no submod changes the focus tree. A submod that adds or edits focuses is outside this version.
+
+The code for adding another parent mod is on GitHub. This repository holds a separate notification mod for each parent. Open a pull request to add one.
+
+[h1]Source[/h1]
+[url=https://github.com/thethomaseffect/hoi4-focus-available-notifications]GitHub: Focus Available Notifications[/url]
+
+Bug reports belong on GitHub issues, not in the Workshop comments.
